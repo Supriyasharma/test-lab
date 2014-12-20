@@ -1,0 +1,79 @@
+{
+    "lab": {
+      "description": {
+            "id": "id_algo",
+            "name": "algorithm",
+            "discipline": ["computer science"],
+            "status": "done",
+            "type": "",
+            "integration_level": 0,
+            "server-side": true,
+            "developer": [
+                {
+                    "contact": {
+                        "email": "pearlofdreams@yahoo.co.in",
+                        "alternate_email": "supriyasharma.vasudeva@gmail.com",
+                        "mobile_number": "0000000000",
+                        "office_number": ""
+                    },
+                    "department": "computers",
+                    "institute": "",
+                    "name": "",
+                    "organization": "",
+                    "role": "",
+                    "title": "",
+                    "web": ""
+                }
+            ]
+        },
+        "build_requirements": {
+            "platform": {
+                "arch": "i1386",
+                "build_steps": {
+                    "build": ["make -C ../src"],
+                    "configure": [],
+                    "post_build": [],
+                    "pre_build": [],
+                    "status": []
+                },
+                "installer": [],
+                "os": "ubuntu",
+                "osVersion": "12",
+                "service_pack": ""
+            }
+        },
+        "runtime_requirements": {
+            "platform": {
+                "arch": "",
+                "hosting": "",
+                "installer": ["sudo apt-get update", 
+             "sudo apt-get install -y apache2"],
+                "lab_actions": {
+                    "backup": [],
+                    "clean": [],
+                    "init": ["mv /var/www/index.html index.html.default",
+         "cp -r ../src/* /var/www/"],
+                    "pause": [],
+                    "publish": [],
+                    "restore": ["restore"],
+                    "resume": [],
+                    "shutdown": ["service apache2 stop"],
+                    "start": ["service apache2 start"],
+                    "stats": [],
+                    "stop": []
+                },
+                "memory": {
+                    "max_required": "",
+                    "min_required": ""
+                },
+                "os": "ubuntu",
+                "osVersion": "12",
+                "servicepack": "",
+                "storage": {
+                    "min_required": ""
+                }
+            }
+        }
+    },
+    "template": "1.0"
+}
